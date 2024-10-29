@@ -1,0 +1,30 @@
+{
+  "canisters": {
+    "myite_backend": {
+      "candid": "src/myite_backend/myite_backend.did",
+      "declarations": {
+        "node_compatibility": true
+      },
+      "package": "myite_backend",
+      "type": "rust"
+    },
+    "myite_frontend": {
+      "dependencies": [
+        "myite_backend"
+      ],
+      "source": [
+        "src/myite_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "myite_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}

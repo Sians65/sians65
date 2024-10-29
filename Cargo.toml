@@ -1,0 +1,5 @@
+[workspace]
+members = [
+    "src/myite_backend"
+]
+resolver = "2"
